@@ -1,0 +1,295 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+
+
+
+/* all used colors */
+
+
+:root {
+
+    --primary: #2A3549;
+    --secondary: #4D5F7E;
+    --third: #8793AA;
+    --yellowish:#F6B50C;
+    --white:#ffffff;
+
+
+    
+
+  }
+
+
+/* home  */
+
+.home-container {
+    background: var(--secondary);
+    height: 100vh;
+}
+
+
+/* navbar */
+.navbar a {
+ color: var(--white);
+ text-decoration: none;
+ 
+ 
+}
+
+.navbar .logo {
+    font-size:60px;
+    color: var(--white);
+    margin-left: 20px;
+}
+
+ul {
+    list-style-type: none;
+    font-size: larger;
+    
+}
+.home-container .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+    margin-right: 150px;
+    
+}
+
+.navbar ul li {
+    margin-left: 200px;
+}
+
+.profile img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-left: 250px;
+    margin-top: 90px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     
+}
+
+
+.home-text {
+    margin-right: 400px;
+    margin-top: 90px;
+   
+}
+
+.hello {
+    line-height: 2;
+    font-size: 25px;
+}
+
+.im{
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.fname{
+    font-size: 30px;
+    line-height: 1.5;
+    
+}
+
+.lname{
+    font-size: 23px;
+    line-height: 1.5;
+    
+}
+
+.dev {
+    line-height: 10;
+    font-style: italic;
+    font-size: 20px;
+  
+}
+
+/* end of home styling */
+
+
+/* about sytling */
+
+.about {
+    background: var(--primary);
+    height: 100vh;
+    
+}
+
+
+.bug {
+    width: 50px;
+    height: 50px;
+}
+
+
+.about-text {
+    font-size: xx-large;
+    margin-left:300px;
+    margin-bottom: 50px;
+    
+}
+
+
+
+.about-card {
+    height: 200px;
+    width: 500px;
+    background: var(--third);
+    margin-left: 200px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+
+.card-text{
+    
+   
+    padding: 20px 70px;
+    line-height: 1.5;
+    font-size: 20px;
+    
+}
+
+
+
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-top: 160px; */
+   
+}
+
+.cv ,.learn{
+    font-family:fantasy;
+    font-size: 18px;
+    font-weight: bold;
+    background: var(--yellowish);
+    width: 160px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 15px;
+
+    margin-right: 300px;
+    margin-top: 30px;
+    cursor: pointer;
+
+}
+
+
+/* endof about styles */
+
+
+/* services styling */
+
+.services {
+    background: var(--secondary);
+    height: 100vh;
+    
+}
+
+
+.service-card {
+    height: 350px;
+    width: 300px;
+    background: var(--third);
+    border-radius: 15px;
+    text-align: center;
+    margin: 10px;
+} 
+
+.service-image {
+    margin-top: 60px;
+    height: 200px;
+    width: 200px;
+}
+.service-text {
+    margin: 20px;
+    font-size: 20px;
+} 
+
+.services-card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+
+.serv-head-text {
+    font-size: 30px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+
+
+
+/* end services styling */
+
+
+/* starting contact styles */
+.contact {
+    background: var(--secondary);
+    height: 100vh;
+    
+}
+
+.contact-card{
+    width: 900px;
+    height: 400px;
+    background: var(--third);
+    margin-left: 200px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+
+.contact-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-btn {
+    font-family:fantasy;
+    font-size: 18px;
+    font-weight: bold;
+    background: var(--yellowish);
+    width: 160px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 15px;
+
+    margin-right: 100px;
+    margin-top: 300px;
+    cursor: pointer;
+}
+
+.contacts {
+    font-size: 30px;
+    line-height: 3;
+    margin-left: 100px;
+}
+
+
+
