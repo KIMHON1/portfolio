@@ -258,14 +258,13 @@ ul {
     height: 400px;
     background: var(--third);
     margin-left: 200px;
-    margin-top: 20px;
     border-radius: 20px;
 }
 
 
 .contact-flex {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -280,8 +279,6 @@ ul {
     text-decoration: none;
     border-radius: 15px;
 
-    margin-right: 100px;
-    margin-top: 300px;
     cursor: pointer;
 }
 
@@ -292,4 +289,45 @@ ul {
 }
 
 
+/* form */
 
+.form {
+    margin-left: 100px;
+    width: 100px;
+    margin-right: 200px;
+    padding: 20px;
+    
+
+}
+
+
+.forms{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+  
+
+}
+
+
+
+input {
+    border-radius: 5px;
+    height: 30px;
+    width: 250px;
+    border-color: var(--yellowish);
+    
+}
+
+
+textarea{
+    border-radius: 10px;
+    border-color: var(--yellowish);
+    margin-top: 40px;
+  
+    color: var(--primary);
+
+    
+}
