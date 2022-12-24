@@ -40,8 +40,13 @@ function validateEmail(){
 
 function validateMessage(){
     var message = document.getElementById('message').value;
-    if(message==0){
-        messageError.innerHTML = "Message is Required"
+    var required = 50;
+    var left = required - message.length;
+    if(left>0){
+        messageError.innerHTML = left +'   '+ 'Message Character is Required';
         return false;
     }
+
+    messageError.innerHTML = '<i class="fa-sharp fa-solid fa-circle-check"></i>';
+    return true;
 }
