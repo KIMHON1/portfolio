@@ -257,7 +257,7 @@ ul {
 
 .contact-card{
     width: 900px;
-    height: 400px;
+    height: 500px;
     background: var(--third);
     margin-left: 200px;
     border-radius: 20px;
@@ -318,10 +318,12 @@ ul {
 
 
 input {
-    border-radius: 5px;
+    border-radius: 7.3px;
     height: 30px;
     width: 250px;
     border-color: var(--yellowish);
+    margin-top: 20px;
+    color: var(--primary);
     
 }
 
@@ -332,6 +334,23 @@ textarea{
     margin-top: 40px;
   
     color: var(--primary);
+
+    
+}
+
+.input-group span{
+    color:var(--yellowish);
+    position:absolute;
+    font-size: 16px;
+    
+}
+
+.input-group span i{
+    position:absolute;
+    color:green;
+    bottom: 7px;
+    right: -245px;
+   
 
     
 }

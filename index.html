@@ -149,22 +149,27 @@
                 </div>
                 <div class="forms">
                 <div class="form">
-                    <div class="email">
+                    <div class="name input-group">
+                  
+                        <input type="text" placeholder = "name" name="name" id="name"
+                        onkeyup="validateName()">
+                        <span id="name-error"></span>
+                    </div>
+                    <div class="email  input-group">
 
-                        <div class="name">
+                       
                   
-                            <input type="text" placeholder = "name" name="name" id="name">
-                        </div>
-                  
-                    <input type="email" placeholder = "email" name="email" id="email">
+                    <input type="email" placeholder = "email" name="email" id="email"  onkeyup="validateEmail()">
+                    <span id="email-error"></span>
                 </div>
 
-                <div class="message">
+                <div class="message  input-group">
                  
                     <!-- <input type="text" placeholder="message" name="message" id="message"> 
                     -->
 
-                    <textarea name="message"  placeholder="message" id="message" cols="30" rows="10"></textarea>
+                    <textarea name="message"  placeholder="message" id="message" cols="30" rows="10" onkeyup="validateMessage()"></textarea>
+                    <span id="message-error"> </span>
                 </div>
                 </div>
 
@@ -176,5 +181,9 @@
        
     </div>
 <!-- where body ends-->
+
+<!-- java script -->
+<script src="./app.js"></script>
+<!-- end of java script -->
 </body>
 </html>
