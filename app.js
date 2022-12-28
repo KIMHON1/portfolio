@@ -1,6 +1,7 @@
 var nameError = document.getElementById('name-error');
 var emailError = document.getElementById('email-error');
 var messageError = document.getElementById('message-error');
+var submitError = document.getElementById('submit-error');
 
 
 function validateName(){
@@ -49,4 +50,16 @@ function validateMessage(){
 
     messageError.innerHTML = '<i class="fa-sharp fa-solid fa-circle-check"></i>';
     return true;
+}
+
+
+function validateForm(){
+    if(!validateMessage() || !validateEmail() || !validateName()){
+        submitError.style.display = 'block';
+        submitError.innerHTML ='please fix the error above firstly';
+        setTimeout(function(){submitError.style.display = 'none';}, 3000);
+        return false;
+
+
+    }
 }

@@ -347,10 +347,19 @@ textarea{
 
 .input-group span i{
     position:absolute;
-    color:green;
+    color:var(--primary);
     bottom: 7px;
     right: -245px;
    
 
     
+}
+
+.err {
+
+    color:var(--yellowish);
+  
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 35px;
 }
