@@ -19,6 +19,7 @@
     --third: #8793AA;
     --yellowish:#F6B50C;
     --white:#ffffff;
+    --transition: all 0.3s linear;
 
 
     
@@ -362,4 +363,73 @@ textarea{
     font-size: 16px;
     margin-top: 10px;
     margin-left: 35px;
+}
+
+
+/* mediaqueries */
+
+/* small screen */
+@media screen and (max-width:576px) {
+    
+
+    .navbar{
+        background-color: var(--yellowish);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-width: 1170px;
+        box-shadow:var(--primary);
+        height: 80px;
+        
+    }
+
+    .navbar .logo {
+        font-size:30px;
+        color: var(--white);
+        margin-left: 6px;
+    }
+
+
+    .navbar a {
+        display:block;
+        
+        
+       }
+
+    .nall{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-toggle{
+        background: transparent;
+        border: transparent;
+        font-size: 1.5rem;
+        color: white;
+        margin-left: 470px;
+        /* transition: var(--transition); */
+        
+    }
+
+
+    .nav-toggle:hover{
+    
+        transform:scale(1.2);
+    
+    }
+
+    .nav-links{
+        display: block;
+    }
+
+
+
+
+
+
+
+
+
 }
