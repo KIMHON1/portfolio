@@ -369,7 +369,7 @@ textarea{
 /* mediaqueries */
 
 /* small screen */
-@media screen and (max-width:576px) {
+@media screen and (max-width:667px) {
     
 
     .navbar{
@@ -380,7 +380,7 @@ textarea{
         width: 100%;
         max-width: 1170px;
         box-shadow:var(--primary);
-        height: 80px;
+    
         
     }
 
@@ -391,16 +391,14 @@ textarea{
     }
 
 
-    .navbar a {
-        display:block;
-        
-        
-       }
+   
 
     .nall{
         display: flex;
         justify-content: space-between;
-        align-items: center;
+    
+        margin-top: 30px;
+       
     }
 
     .nav-toggle{
@@ -408,7 +406,8 @@ textarea{
         border: transparent;
         font-size: 1.5rem;
         color: white;
-        margin-left: 470px;
+        margin-left: 300px;
+        /* margin-top: 10px; */
         /* transition: var(--transition); */
         
     }
@@ -420,13 +419,41 @@ textarea{
     
     }
 
-    .nav-links{
+  
+    .navbar ul {
+      
         display: block;
+        padding: 1rem 2rem;
+        margin-left: -590px;
+        margin-top:50px; 
+        
+
+
+    
+    
+   }
+
+
+    /* ul {
+        list-style-type: none;
+        font-size: larger;
+        
     }
-
-
-
-
+    .home-container .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .navbar ul {
+        display: flex;
+        margin-right: 150px;
+        
+    }
+    
+    .navbar ul li {
+        margin-left: 200px;
+    } */
 
 
 
