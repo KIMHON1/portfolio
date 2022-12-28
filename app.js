@@ -2,6 +2,56 @@ var nameError = document.getElementById('name-error');
 var emailError = document.getElementById('email-error');
 var messageError = document.getElementById('message-error');
 var submitError = document.getElementById('submit-error');
+var links = document.getElementById("nav-links");
+var navBtn = document.getElementById("nav-toggle");
+
+navBtn.addEventListener("click", ()=>{
+    links.classList.toggle("show-links")
+})
+
+
+
+const scrollLinks = document.querySelectorAll(".scroll-link");
+scrollLinks.forEach(link => {
+  link.addEventListener("click", e => {
+    // prevent default
+    e.preventDefault();
+    links.classList.remove("show-links");
+
+    const id = e.target.getAttribute("href").slice(1);
+    const element = document.getElementById(id);
+    //
+    let position = element.offsetTop - 62;
+
+    window.scrollTo({
+      left: 0,
+      // top: element.offsetTop,
+      top: position,
+      behavior: "smooth"
+    });
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 function validateName(){
