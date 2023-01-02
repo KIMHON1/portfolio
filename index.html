@@ -21,29 +21,33 @@
 
         <!-- starting of home container -->
 
-        <div class="home-container" id="home">
-            <div class="navbar">
+        <header  id="home">
+         <div class="navbar">
+                <div class="nav-center"> 
+                <div class="nav-header">
+                    <div class="logo">KH</div>
+                    <div type="button"  id = "nav-toggle" class="nav-toggle"><i class="fas fa-bars"></i>
+               </div>  
+                </div>
                 
-              <div class="nall">
-               <div class="logo">KH</div>
-               <div type="button"  id = "nav-toggle" class="l nav-toggle"><i class="fas fa-bars"></i>
-               </div>   
-               <div class="nav-links">
-                <ul>
+          
+                <ul class="nav-links" id="nav-links">
                           
                         
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About Me</a></li>
-                        <li><a href="#service">Services</a></li>
-                        <li><a href="#contact">Contact Me</a></li>
+                        <li><a href="#home" class="nav-link scroll-link">Home</a></li>
+                        <li><a href="#about" class="nav-link scroll-link">About Me</a></li>
+                        <li><a href="#service" class="nav-link scroll-link">Services</a></li>
+                        <li><a href="#contact" class="nav-link scroll-link">Contact Me</a></li>
                        
                 </ul>
-                </div>
                 
-
-                </div>
-            
             </div>
+        </div>
+                 
+
+            
+            
+ 
             
             <div class="hero">
                 <div class="profile">
@@ -60,26 +64,26 @@
                 </div>
                 
             </div>
-        </div>
-        <!-- starting of home container -->
+        </header>
+        <!-- end of home container -->
 
 
         <!-- starting of about container -->
         <div class="about" id="about">
-
-            <div class="bug"></div>
-            <div class="wrap">
+            <div class="null"></div>
+            <div class="about-c">
+           
             <div class="about-text">About Me</div>
             <div class="about-container">
-                <div class="about-card">
+                <div class="about-items">
                 
-                    <div class="card-text">
+                    <div class="about-card">
                      
-                        I’m full stack developer with two years of experience i have worked on different kind of project with pro for developing my knowledge . I learn new tecknology constantly and love working in team.
-                    </div>
-                </div>
+                        I’m full stack developer with three years of experience i have worked on different kind of project with pro for developing my knowledge.
+                         I learn new tecknology constantly and love working in team.
 
-                  <div class="btn">
+                    </div>
+                    <div class="all-btn">
                     
                         <div class="cv">
                                     MyCV
@@ -90,13 +94,16 @@
                         </div>
 
                     </div>
+                </div>
+
+               
             </div>
           
 
-              
+        </div>
         </div>
 
-    </div>
+
 
     <!-- end of about container -->
 
@@ -134,18 +141,21 @@
             </div>
         </div>
         
-    </div>
+    </div> 
 
 
      <!-- end  of services container -->
-    </div>
 
 
     <div class="contact" id="contact">
-        <div class="bug"></div>
+    <div class="bug">
+
+    </div>
+        <div class="contact-t">Contact Me</div>
+        <div class="contact-flex">
+
         <div class="contact-card">
-            <div class="contact-flex">
-                <div class="contacts">
+                <!-- <div class="contacts">
                     <div class="email">
                         <i class="fa-brands fa-square-reddit"></i></i></lebel> 
                     KIMHON1</div>
@@ -155,7 +165,7 @@
                     <div class="github"><a href="https://github.com/KIMHON1"><lebel><i class="fa-brands fa-github"></i></a> </lebel> <a href="https://github.com/KIMHON1">KIMHON1</a></div>
         
                     
-                </div>
+                </div> -->
                 <div class="forms">
                 <div class="form">
                     <div class="name input-group">
@@ -167,29 +177,30 @@
                     <div class="email  input-group">
 
                        
-                  
+    
                     <input type="email" placeholder = "email" name="email" id="email"  onkeyup="validateEmail()">
                     <span id="email-error"></span>
                 </div>
 
-                <div class="message  input-group">
-                 
-                    <!-- <input type="text" placeholder="message" name="message" id="message"> 
-                    -->
+                <div class="message  input-group"> 
+            
+                <!-- <input type="text" placeholder="message" name="message" id="message">  -->
+                    
 
-                    <textarea name="message"  placeholder="message" id="message" cols="30" rows="10" onkeyup="validateMessage()"></textarea>
+              <textarea name="message"  placeholder="message" id="message" cols="30" rows="10" onkeyup="validateMessage()"></textarea>
                     <span id="message-error"> </span>
                 </div>
                 </div>
 
-                <div class="contact-btn" onclick="return validateForm()">contact Me</div>
-                <span class="err" id="submit-error"></span>
+                
             </div>
             </div>
            
-        </div>
-       
+     
+        <div class="contact-btn" onclick="return validateForm()">contact Me</div>
+        <span class="err" id="submit-error"></span>
     </div>
+    </div> 
 <!-- where body ends-->
 
 <!-- java script -->

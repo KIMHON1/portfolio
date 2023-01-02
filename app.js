@@ -2,15 +2,18 @@ var nameError = document.getElementById('name-error');
 var emailError = document.getElementById('email-error');
 var messageError = document.getElementById('message-error');
 var submitError = document.getElementById('submit-error');
-var links = document.getElementById("nav-links");
-var navBtn = document.getElementById("nav-toggle");
 
-navBtn.addEventListener("click", ()=>{
-    links.classList.toggle("show-links")
-})
+// ********** nav toggle ************
+// select button and links
+const navBtn = document.getElementById("nav-toggle");
+const links = document.getElementById("nav-links");
+// add event listener
+navBtn.addEventListener("click", () => {
+  links.classList.toggle("show-links");
+});
 
-
-
+// ********** smooth scroll ************
+// select links
 const scrollLinks = document.querySelectorAll(".scroll-link");
 scrollLinks.forEach(link => {
   link.addEventListener("click", e => {
@@ -31,7 +34,6 @@ scrollLinks.forEach(link => {
     });
   });
 });
-
 
 
 
