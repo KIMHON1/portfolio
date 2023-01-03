@@ -148,48 +148,49 @@
 
 
     <div class="contact" id="contact">
-    <div class="bug">
 
-    </div>
-        <div class="contact-t">Contact Me</div>
-        <div class="contact-flex">
 
-        <div class="contact-card">
+
+        
+        <div class="container">
+
      
-                <div class="forms">
-                <div class="form">
-                    <div class="name input-group">
-                  
-                        <input type="text" placeholder = "name" name="name" id="name"
+                <div class="content-box">
+                  <div class="left"></div>
+                  <div class="right">
+            
+                   
+                          <h2>contact Me</h2>
+                        <input type="text" class="field" placeholder = "name" name="name" id="name"
                         onkeyup="validateName()">
                         <span id="name-error"></span>
-                    </div>
-                    <div class="email  input-group">
+             
 
                        
     
-                    <input type="email" placeholder = "email" name="email" id="email"  onkeyup="validateEmail()">
+                    <input type="email" class="field"  placeholder = "email" name="email" id="email"  onkeyup="validateEmail()">
                     <span id="email-error"></span>
-                </div>
-
-                <div class="message  input-group"> 
+              
             
-                <!-- <input type="text" placeholder="message" name="message" id="message">  -->
                     
 
-              <textarea name="message"  placeholder="message" id="message" cols="30" rows="10" onkeyup="validateMessage()"></textarea>
+              <textarea name="message"  class="field area" placeholder="message" id="message" cols="30" rows="10" onkeyup="validateMessage()"></textarea>
                     <span id="message-error"> </span>
+
+                    <div class="btn" onclick="return validateForm()">submit</div>
+                    <span class="err" id="submit-error"></span>
+                </div>
                 </div>
                 </div>
 
+              </div>
+
                 
-            </div>
-            </div>
+          
+     
            
      
-        <div class="contact-btn" onclick="return validateForm()">contact Me</div>
-        <span class="err" id="submit-error"></span>
-    </div>
+      
     </div> 
      <!-- footer -->
      <footer class="section footer">
