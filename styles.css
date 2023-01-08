@@ -423,7 +423,7 @@ Navbar
 .dev {
     line-height: 10;
     font-style: italic;
-    font-size: 20px;
+    font-size: 10px;
   
 }
     
@@ -517,8 +517,9 @@ Navbar
 
 @media screen and (max-width: 670px){
     .about{
-        width: 100%;
-    }
+      width:100%;
+      overflow-x:hidden;
+    } 
     .about-items{
         display: flex;
         flex-direction:column;
@@ -528,13 +529,13 @@ Navbar
      }
 
      .about-card{
-        height: 500px;
-        width: 300px;
+        height: 50%;
+        width: 50%;
         background: var(--third);
     
-        border-radius: 15px;
+        border-radius: 5%;
     
-        /* margin-left: 100px; */
+  
         padding: 50px 50px;
         line-height: 1.5;
         font-size: 20px;
@@ -581,18 +582,25 @@ Navbar
     align-items: center;
    
 }
+.bug{
+  height: 10px;
+}
 
 .serv-head-text {
     font-size: 30px;
-    margin-top: 10px;
+     margin-top: 10px;
     text-align: center;
-}
+} 
 
 
 
 @media screen and (max-width: 670px){
     .services{
         width: 100%;
+        
+
+          
+      
     }
     .services-card {
         display: flex;
