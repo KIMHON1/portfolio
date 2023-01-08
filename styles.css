@@ -775,15 +775,37 @@ h2::after{
     
   }
 }
+.err1 ,.err2  ,.err3 , .err4  {
 
-.err {
+  color:var(--yellowish);
+
+  font-size: 16px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.err1 i,.err2 i ,.err3 i, .err4 i  {
+
+  color:var(--yellowish);
+  position: absolute;
+  margin-top: -3.7%;
+  margin-left: 10%;
+}
+
+
+@media screen and (max-width: 670px){
+  .err1 i,.err2 i ,.err3 i, .err4 i  {
 
     color:var(--yellowish);
-  
-    font-size: 16px;
-    margin-top: 10px;
-    margin-left: 15px;
+    position: absolute;
+    margin-top: -12.7%;
+    margin-left: 18%;
+  }
 }
+
+
+
+
+
 
 
 @media screen and (max-width: 670px){
