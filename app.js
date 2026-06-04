@@ -1,126 +1,83 @@
-var nameError = document.getElementById('name-error');
-var emailError = document.getElementById('email-error');
-var messageError = document.getElementById('message-error');
-var submitError = document.getElementById('submit-error');
+const nameError    = document.getElementById('name-error');
+const emailError   = document.getElementById('email-error');
+const messageError = document.getElementById('message-error');
+const submitError  = document.getElementById('submit-error');
 
+// Set copyright year
+document.getElementById('date').innerHTML = new Date().getFullYear();
 
+// Navbar toggle
+const navBtn   = document.getElementById('nav-toggle');
+const navLinks = document.getElementById('nav-links');
 
-// ********** set date ************
-// select span
-const date = (document.getElementById(
-    "date"
-  ).innerHTML = new Date().getFullYear());
-
-
-// ********** nav toggle ************
-// select button and links
-const navBtn = document.getElementById("nav-toggle");
-const links = document.getElementById("nav-links");
-// add event listener
-navBtn.addEventListener("click", () => {
-  links.classList.toggle("show-links");
+navBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('show-links');
 });
 
-// ********** smooth scroll ************
-// select links
-const scrollLinks = document.querySelectorAll(".scroll-link");
-scrollLinks.forEach(link => {
-  link.addEventListener("click", e => {
-    // prevent default
-    e.preventDefault();
-    links.classList.remove("show-links");
+// Smooth scroll
+document.querySelectorAll('.scroll-link').forEach(link => {
+    link.addEventListener('click', e => {
+        e.preventDefault();
+        navLinks.classList.remove('show-links');
 
-    const id = e.target.getAttribute("href").slice(1);
-    const element = document.getElementById(id);
-    //
-    let position = element.offsetTop - 62;
+        const id      = e.currentTarget.getAttribute('href').slice(1);
+        const target  = document.getElementById(id);
+        const navH    = document.querySelector('.navbar').offsetHeight;
 
-    window.scrollTo({
-      left: 0,
-      // top: element.offsetTop,
-      top: position,
-      behavior: "smooth"
+        window.scrollTo({
+            top:      target.offsetTop - navH,
+            behavior: 'smooth'
+        });
     });
-  });
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function validateName(){
-    var name = document.getElementById('name').value;
-    if(name.length ==0){
-        nameError.innerHTML = 'Name is required';
+// Form validation
+function validateName() {
+    const name = document.getElementById('name').value.trim();
+    if (name.length === 0) {
+        nameError.innerHTML = 'Name is required.';
         return false;
     }
-
-    if(!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)){
-        nameError.innerHTML = ' Type in Your Both Names';
+    if (!name.match(/^[A-Za-z]+([\s'-][A-Za-z]+)*$/)) {
+        nameError.innerHTML = 'Please enter a valid name.';
         return false;
     }
-
-    nameError.innerHTML = '<i class="fa-sharp fa-solid fa-circle-check"></i>';
+    nameError.innerHTML = '<i class="fa-solid fa-circle-check" style="color:#27ae60"></i>';
     return true;
 }
 
-
-function validateEmail(){
-    var email = document.getElementById('email').value;
-    if(email.length==0){
-        emailError.innerHTML = 'Email is Required';
+function validateEmail() {
+    const email = document.getElementById('email').value.trim();
+    if (email.length === 0) {
+        emailError.innerHTML = 'Email is required.';
         return false;
     }
-
-    if(!email.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)){
-        emailError.innerHTML = 'Email Invalid';
-        return false
+    if (!email.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)) {
+        emailError.innerHTML = 'Please enter a valid email address.';
+        return false;
     }
-
-
-    emailError.innerHTML = '<i class="fa-sharp fa-solid fa-circle-check"></i>';
+    emailError.innerHTML = '<i class="fa-solid fa-circle-check" style="color:#27ae60"></i>';
     return true;
 }
 
-
-function validateMessage(){
-    var message = document.getElementById('message').value;
-    var required = 50;
-    var left = required - message.length;
-    if(left>0){
-        messageError.innerHTML = left +'   '+ 'Message Character is Required';
+function validateMessage() {
+    const message  = document.getElementById('message').value;
+    const required = 50;
+    const left     = required - message.length;
+    if (left > 0) {
+        messageError.innerHTML = `${left} more characters required.`;
         return false;
     }
-
-    messageError.innerHTML = '<i class="fa-sharp fa-solid fa-circle-check"></i>';
+    messageError.innerHTML = '<i class="fa-solid fa-circle-check" style="color:#27ae60"></i>';
     return true;
 }
 
-
-function validateForm(){
-    if(!validateMessage() || !validateEmail() || !validateName()){
+function validateForm() {
+    const valid = validateName() & validateEmail() & validateMessage();
+    if (!valid) {
         submitError.style.display = 'block';
-        submitError.innerHTML ='please fix the error above firstly';
-        setTimeout(function(){submitError.style.display = 'none';}, 3000);
+        submitError.innerHTML     = 'Please fix the errors above before submitting.';
+        setTimeout(() => { submitError.style.display = 'none'; }, 3500);
         return false;
-
-
     }
 }

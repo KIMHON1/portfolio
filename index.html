@@ -2,280 +2,595 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kimenyi Honore — Full-Stack ERP Developer specializing in Laravel, PHP, and business management systems based in Kigali, Rwanda.">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="./styles.css">
-    <title>KimHon</title>
+
+    <title>Kimenyi Honore — Full-Stack ERP Developer</title>
 </head>
 <body>
-<!-- where body start -->
 
-    <div class="main-container">
+<div class="main-container">
 
-        <!-- starting of home container -->
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-center">
+            <div class="nav-header">
+                <div class="logo">KH</div>
+                <button type="button" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home"       class="nav-link scroll-link">Home</a></li>
+                <li><a href="#about"      class="nav-link scroll-link">About</a></li>
+                <li><a href="#skills"     class="nav-link scroll-link">Skills</a></li>
+                <li><a href="#projects"   class="nav-link scroll-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link scroll-link">Experience</a></li>
+                <li><a href="#contact"    class="nav-link scroll-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-        <header  id="home">
-         <div class="navbar">
-                <div class="nav-center"> 
-                <div class="nav-header">
-                    <div class="logo">KH</div>
-                    <div type="button"  id = "nav-toggle" class="nav-toggle"><i class="fas fa-bars"></i>
-               </div>  
-                </div>
-                
-          
-                <ul class="nav-links" id="nav-links">
-                          
-                        
-                        <li><a href="#home" class="nav-link scroll-link">Home</a></li>
-                        <li><a href="#about" class="nav-link scroll-link">About Me</a></li>
-                        <li><a href="#service" class="nav-link scroll-link">Services</a></li>
-                        <li><a href="#contact" class="nav-link scroll-link">Contact Me</a></li>
-                       
-                </ul>
-                
+    <!-- Hero -->
+    <header id="home" class="hero">
+        <div class="profile">
+            <img src="./images/kimhon.png" alt="Kimenyi Honore">
+        </div>
+        <div class="home-text">
+            <span class="hello">Hello, I'm</span>
+            <h1 class="fname">Kimenyi <span class="lname">Honore</span></h1>
+            <p class="dev">Full-Stack ERP Developer</p>
+            <p class="location"><i class="fas fa-map-marker-alt"></i> Kigali, Rwanda</p>
+            <div class="hero-btns">
+                <a href="#projects" class="hero-btn scroll-link">View Projects</a>
+                <a href="#contact"  class="hero-btn hero-btn-outline scroll-link">Contact Me</a>
             </div>
         </div>
-                 
+    </header>
 
-            
-            
- 
-            
-            <div class="hero">
-                <div class="profile">
-                        <img src="./images/kimhon.png" alt="kimhon profile">
-                </div>
-
-                <div class="home-text">
-                    <div class="hello">Hello</div>
-                    <div class="im">i'm</div>
-                    <div class="fname">KIMENYI</div>
-                    <div class="lname">Honore</div>
-                    <div class="dev">full stack Developer</div>
-
-                </div>
-                
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="section-header">
+            <h2>About Me</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                    I'm a full-stack developer with over 3 years of experience building ERP and business management systems.
+                    My focus is backend development — accounting modules, payroll engines, inventory systems, and payment
+                    integrations used daily by real businesses in Rwanda.
+                </p>
+                <p>
+                    At <strong>GILANTA Company</strong>, I built the general ledger, payroll module, RRA tax handling
+                    (VAT &amp; withholding), and Mobile Money integration — working directly with accountants to ensure
+                    every transaction was accurate and auditable. I've learned that in finance systems, there is no margin
+                    for error.
+                </p>
+                <p>
+                    I hold a BSc in Computer and Software Engineering from the University of Rwanda and I'm always
+                    expanding my skillset — whether that's a new framework, API integration, or a new business domain.
+                    I'm fluent in English and Kinyarwanda, with intermediate German.
+                </p>
             </div>
-        </header>
-        <!-- end of home container -->
+            <div class="about-details">
+                <div class="detail-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Kigali, Rwanda</span>
+                </div>
+                <div class="detail-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:honore.kimenyi@gmail.com">honore.kimenyi@gmail.com</a>
+                </div>
+                <div class="detail-item">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+250783325515">+250 783 325 515</a>
+                </div>
+                <div class="detail-item">
+                    <i class="fab fa-github"></i>
+                    <a href="https://github.com/KIMHON1" target="_blank" rel="noopener">github.com/KIMHON1</a>
+                </div>
+                <div class="detail-item">
+                    <i class="fab fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/kimenyi-honore/" target="_blank" rel="noopener">linkedin.com/in/kimenyi-honore</a>
+                </div>
+                <div class="about-btns">
+                    <a href="#contact" class="btn-primary scroll-link">Hire Me</a>
+                    <a href="Kimenyi_Honore_CV_Portfolio.pdf" download class="btn-outline">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Skills -->
+    <section class="skills" id="skills">
+        <div class="section-header">
+            <h2>Technical Skills</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3><i class="fas fa-server"></i> Backend</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">PHP</span>
+                    <span class="skill-tag">Laravel</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Django</span>
+                    <span class="skill-tag">REST APIs</span>
+                    <span class="skill-tag">GuzzleHTTP</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-desktop"></i> Frontend</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">Bootstrap</span>
+                    <span class="skill-tag">DataTables</span>
+                    <span class="skill-tag">Blade Templates</span>
+                    <span class="skill-tag">SCSS</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-database"></i> Database</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">MySQL</span>
+                    <span class="skill-tag">Eloquent ORM</span>
+                    <span class="skill-tag">Database Design</span>
+                    <span class="skill-tag">Query Optimization</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-plug"></i> Integrations</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">MTN MoMo API</span>
+                    <span class="skill-tag">Irembo API</span>
+                    <span class="skill-tag">OpenAI API</span>
+                    <span class="skill-tag">Spatie Permissions</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-tools"></i> Tools</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">GitHub</span>
+                    <span class="skill-tag">Linux</span>
+                    <span class="skill-tag">Postman</span>
+                    <span class="skill-tag">Composer</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-calculator"></i> Domain Knowledge</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">General Ledger</span>
+                    <span class="skill-tag">Payroll Systems</span>
+                    <span class="skill-tag">RRA Tax (VAT)</span>
+                    <span class="skill-tag">Inventory Costing</span>
+                    <span class="skill-tag">POS Systems</span>
+                    <span class="skill-tag">Double-Entry Bookkeeping</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!-- starting of about container -->
-        <div class="about" id="about">
-            <div class="null"></div>
-            <div class="about-c">
-           
-            <div class="about-text">About Me</div>
-            <div class="about-container">
-                <div class="about-items">
-                
-                    <div class="about-card">
-                     
-                        I’m full stack developer with three years of experience i have worked on different kind of project with pro for developing my knowledge.
-                         I learn new tecknology constantly and love working in team.
+    <!-- Projects -->
+    <section class="projects" id="projects">
+        <div class="section-header">
+            <h2>Projects</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="projects-grid">
 
+            <div class="project-card featured">
+                <div class="project-badge">Featured</div>
+                <div class="project-info">
+                    <h3>Business ERP System</h3>
+                    <p>
+                        A full-featured enterprise resource planning system built for SMEs in Rwanda.
+                        Covers the complete business cycle — from inventory and point-of-sale to accounting,
+                        payroll, and tax compliance — with role-based access control and real-time reporting.
+                    </p>
+                    <div class="project-features">
+                        <div class="feature"><i class="fas fa-check"></i> General Ledger, Chart of Accounts &amp; double-entry Journal Entries</div>
+                        <div class="feature"><i class="fas fa-check"></i> Payroll module with RRA tax handling (VAT &amp; withholding tax)</div>
+                        <div class="feature"><i class="fas fa-check"></i> Inventory management — stock transfers, adjustments &amp; weighted average costing</div>
+                        <div class="feature"><i class="fas fa-check"></i> POS system — sell transactions, credit sales &amp; payment workflows</div>
+                        <div class="feature"><i class="fas fa-check"></i> MTN Mobile Money &amp; Irembo payment integrations</div>
+                        <div class="feature"><i class="fas fa-check"></i> OpenAI API integration for intelligent features</div>
+                        <div class="feature"><i class="fas fa-check"></i> Role &amp; permission management (Spatie)</div>
+                        <div class="feature"><i class="fas fa-check"></i> DataTables reports with advanced filtering</div>
                     </div>
-                    <div class="all-btn">
-                    
-                        <div class="cv">
-                                    MyCV
-                        </div>
-
-                        <div class="learn">
-                            Learn More
-                        </div>
-
+                    <div class="project-tags">
+                        <span>Laravel</span>
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                        <span>Bootstrap</span>
+                        <span>DataTables</span>
+                        <span>GuzzleHTTP</span>
+                        <span>Spatie</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/KIMHON1" target="_blank" rel="noopener" class="project-link">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
                     </div>
                 </div>
-
-               
-            </div>
-          
-
-        </div>
-        </div>
-
-
-
-    <!-- end of about container -->
-
-     <!-- starting of services container -->
-     <div class="services" id="service">
-      <div class="bug"></div>
-         <div class="serv-head-text">Services</div>
-
-         <div class="services-card">
-            <div class="service-card">
-                <img  class="service-image" src="./images/undraw_everyday_design_gy64.svg" alt="graphic-image">
-            <div class="service-text">
-                Graphic Design
-            </div>
-            
             </div>
 
-            <div class="service-card ">
-                
-                    <img class="service-image" src="./images/undraw_designer_girl_re_h54c.svg" alt="ui-image">
-
-                    <div class="service-text">
-                        UI Design
+            <!-- Savings Management System -->
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Savings Management System</h3>
+                    <p>
+                        A dual-app web platform for managing customer savings accounts. Clients can register,
+                        log in, deposit, withdraw, and view transaction history. Admins verify users and
+                        monitor all financial activity through a dedicated dashboard.
+                    </p>
+                    <div class="project-features">
+                        <div class="feature"><i class="fas fa-check"></i> Customer registration, login &amp; profile management</div>
+                        <div class="feature"><i class="fas fa-check"></i> Deposit, withdrawal &amp; transaction history</div>
+                        <div class="feature"><i class="fas fa-check"></i> Admin dashboard for user verification &amp; monitoring</div>
+                        <div class="feature"><i class="fas fa-check"></i> Secure JWT-based authentication</div>
                     </div>
-                
+                    <div class="project-tags">
+                        <span>JavaScript</span>
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>REST API</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/KIMHON1/Savings-Management-System-Client-Application" target="_blank" rel="noopener" class="project-link">
+                            <i class="fab fa-github"></i> Client App
+                        </a>
+                        <a href="https://github.com/KIMHON1/Savings-Management-System---Admin" target="_blank" rel="noopener" class="project-link">
+                            <i class="fab fa-github"></i> Admin App
+                        </a>
+                    </div>
+                </div>
             </div>
 
-            <div class="service-card">
-                
-                    <img class="service-image" src="./images/undraw_designer_life_re_6ywf.svg" alt="web-image">
-                
-                <div class="service-text">
-                    Web Design
+            <!-- Hostel Management System -->
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Hostel Management System</h3>
+                    <p>
+                        A full web application for managing student accommodation — handling room allocation,
+                        bookings, and resident records. Built in two versions: PHP for the original system
+                        and Django for a later refactor.
+                    </p>
+                    <div class="project-features">
+                        <div class="feature"><i class="fas fa-check"></i> Room inventory &amp; availability tracking</div>
+                        <div class="feature"><i class="fas fa-check"></i> Student registration &amp; room assignment</div>
+                        <div class="feature"><i class="fas fa-check"></i> Booking management &amp; occupancy reports</div>
+                    </div>
+                    <div class="project-tags">
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                        <span>Python</span>
+                        <span>Django</span>
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/KIMHON1/hostel_management-project" target="_blank" rel="noopener" class="project-link">
+                            <i class="fab fa-github"></i> PHP Version
+                        </a>
+                        <a href="https://github.com/KIMHON1/hostel_management" target="_blank" rel="noopener" class="project-link">
+                            <i class="fab fa-github"></i> Django Version
+                        </a>
+                    </div>
                 </div>
+            </div>
+
+            <!-- BOQ System -->
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>BOQ &amp; Construction Management System</h3>
+                    <p>
+                        A Bill of Quantities system built for construction and engineering firms.
+                        Enables project managers to estimate material quantities, calculate costs,
+                        and generate itemised reports for construction projects.
+                    </p>
+                    <div class="project-features">
+                        <div class="feature"><i class="fas fa-check"></i> Itemised bill of quantities per project</div>
+                        <div class="feature"><i class="fas fa-check"></i> Material cost estimation &amp; budget tracking</div>
+                        <div class="feature"><i class="fas fa-check"></i> Project management &amp; report generation</div>
+                        <div class="feature"><i class="fas fa-check"></i> Role-based access for engineers &amp; managers</div>
+                    </div>
+                    <div class="project-tags">
+                        <span>Laravel</span>
+                        <span>PHP</span>
+                        <span>Blade</span>
+                        <span>MySQL</span>
+                        <span>Bootstrap</span>
+                    </div>
+                    <div class="project-links">
+                        <span class="project-link private-badge">
+                            <i class="fas fa-lock"></i> Private Repository
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Real Estate -->
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Real Estate Platform</h3>
+                    <p>
+                        A property listing and search platform built with Python and Django.
+                        Allows agents to publish properties and buyers to search, filter,
+                        and make enquiries — developed during work at Solvit Africa.
+                    </p>
+                    <div class="project-features">
+                        <div class="feature"><i class="fas fa-check"></i> Property listings with images &amp; details</div>
+                        <div class="feature"><i class="fas fa-check"></i> Search &amp; filter by location, price, type</div>
+                        <div class="feature"><i class="fas fa-check"></i> Contact agent / enquiry forms</div>
+                        <div class="feature"><i class="fas fa-check"></i> Admin panel for listing management</div>
+                    </div>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Django</span>
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>SQLite</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/KIMHON1/Real_Estate" target="_blank" rel="noopener" class="project-link">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vermicomposting IoT -->
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Vermicomposting IoT &amp; AI Monitor</h3>
+                    <p>
+                        A smart monitoring system for vermicomposting (worm farming) operations.
+                        IoT sensors track environmental conditions in real time, while an AI layer
+                        analyses data to generate recommendations and alerts for optimal worm health.
+                    </p>
+                    <div class="project-features">
+                        <div class="feature"><i class="fas fa-check"></i> Real-time IoT sensor data collection</div>
+                        <div class="feature"><i class="fas fa-check"></i> AI-powered analysis &amp; recommendations</div>
+                        <div class="feature"><i class="fas fa-check"></i> Live dashboard with data visualisation</div>
+                        <div class="feature"><i class="fas fa-check"></i> Alerts for abnormal environmental readings</div>
+                    </div>
+                    <div class="project-tags">
+                        <span>JavaScript</span>
+                        <span>IoT</span>
+                        <span>AI / ML</span>
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/KIMHON1/vermicomponsting" target="_blank" rel="noopener" class="project-link">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Learning Log -->
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Learning Log</h3>
+                    <p>
+                        A personal knowledge-management web app built with Django. Users can track topics
+                        they are studying, write notes and journal entries for each topic, and review their
+                        progress over time — all behind user authentication.
+                    </p>
+                    <div class="project-features">
+                        <div class="feature"><i class="fas fa-check"></i> Topic-based learning tracker</div>
+                        <div class="feature"><i class="fas fa-check"></i> Notes &amp; dated journal entries per topic</div>
+                        <div class="feature"><i class="fas fa-check"></i> User registration &amp; authentication</div>
+                        <div class="feature"><i class="fas fa-check"></i> Private entries visible only to the owner</div>
+                    </div>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Django</span>
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>SQLite</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/KIMHON1/learning_log" target="_blank" rel="noopener" class="project-link">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="experience" id="experience">
+        <div class="section-header">
+            <h2>Work Experience</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3>ERP Developer</h3>
+                        <span class="company">GILANTA Company</span>
+                        <span class="date"><i class="fas fa-calendar-alt"></i> Aug 2023 – Present</span>
+                        <span class="location-badge"><i class="fas fa-map-marker-alt"></i> Kigali, Rwanda</span>
+                    </div>
+                    <ul class="timeline-list">
+                        <li>Built and maintained core accounting modules: general ledger, chart of accounts, and double-entry journal entries used by active businesses.</li>
+                        <li>Developed RRA-compliant tax features covering VAT and withholding tax calculation and reporting.</li>
+                        <li>Built a complete payroll module — salary computation, payroll expense journaling on save, and payment journal on disbursement.</li>
+                        <li>Integrated MTN Mobile Money (MoMo) and Irembo for digital payment reconciliation directly into the ledger.</li>
+                        <li>Designed inventory management with weighted average cost, stock adjustments, transfers, and POS sell workflows.</li>
+                        <li>Worked directly with accountants to debug financial data, ensuring accuracy and a clean audit trail.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3>Software Engineer &amp; QA</h3>
+                        <span class="company">Silver Rwanda IT Professionals</span>
+                        <span class="date"><i class="fas fa-calendar-alt"></i> Jun 2022 – Mar 2023</span>
+                    </div>
+                    <ul class="timeline-list">
+                        <li>Built and tested business applications with a strong focus on data reliability and accuracy.</li>
+                        <li>Implemented backup and recovery procedures to protect critical business records.</li>
+                        <li>Performed QA across multiple application layers and resolved bugs in cross-functional teams.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3>Junior Developer</h3>
+                        <span class="company">Solvit Africa</span>
+                        <span class="date"><i class="fas fa-calendar-alt"></i> Jan 2021 – Mar 2022</span>
+                    </div>
+                    <ul class="timeline-list">
+                        <li>Developed web applications using Python and Django.</li>
+                        <li>Conducted thorough testing and bug-fixing to maintain application stability and reliability.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section class="education" id="education">
+        <div class="section-header">
+            <h2>Education &amp; Certifications</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="edu-grid">
+            <div class="edu-card">
+                <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                <h3>BSc (Hons) Computer &amp; Software Engineering</h3>
+                <span class="edu-institution">University of Rwanda</span>
+                <span class="edu-date">2019 – 2024</span>
+            </div>
+            <div class="edu-card">
+                <div class="edu-icon"><i class="fas fa-shield-alt"></i></div>
+                <h3>Cybersecurity Training</h3>
+                <span class="edu-institution">AfriTech</span>
+                <span class="edu-date">Apr 2023 – May 2024</span>
+            </div>
+            <div class="edu-card">
+                <div class="edu-icon"><i class="fas fa-certificate"></i></div>
+                <h3>Cisco CCNA</h3>
+                <span class="edu-institution">Cisco Networking Academy</span>
+                <span class="edu-date">2023</span>
+            </div>
+            <div class="edu-card">
+                <div class="edu-icon"><i class="fas fa-certificate"></i></div>
+                <h3>Cisco CyberOps Associate</h3>
+                <span class="edu-institution">Cisco Networking Academy</span>
+                <span class="edu-date">2024</span>
             </div>
         </div>
-         
-    </div> 
+    </section>
 
-
-     <!-- end  of services container -->
-
-    <div class="contact" id="contact">
-
-
-
-        
-        <div class="container">
-
-     
-                <div class="content-box">
-                  <div class="left"></div>
-                  <div class="right">
-            
-                   
-                          <h2>contact Me</h2>
-                        <input type="text" class="field" placeholder = "name" name="name" id="name"
-                        onkeyup="validateName()">
-                        <span class="err1" id="name-error"></span>
-             
-
-                       
-    
-                    <input type="email" class="field"  placeholder = "email" name="email" id="email"  onkeyup="validateEmail()">
-                    <span class="err2" id="email-error"></span>
-              
-            
-                    
-
-              <textarea name="message"  class="field area" placeholder="message" id="message" cols="30" rows="10" onkeyup="validateMessage()"></textarea>
-                    <span class="err3" id="message-error"> </span>
-
-                    <div class="btn" onclick="return validateForm()">submit</div>
-                    <span class="err4" id="submit-error"></span>
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="section-header">
+            <h2>Contact Me</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <h3>Let's work together</h3>
+                <p>
+                    I'm open to full-time roles, freelance ERP projects, and backend development work.
+                    Feel free to reach out — I typically respond within 24 hours.
+                </p>
+                <div class="contact-detail">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:honore.kimenyi@gmail.com">honore.kimenyi@gmail.com</a>
                 </div>
+                <div class="contact-detail">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+250783325515">+250 783 325 515</a>
                 </div>
+                <div class="contact-detail">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Kigali, Rwanda</span>
                 </div>
+                <div class="contact-detail">
+                    <i class="fab fa-github"></i>
+                    <a href="https://github.com/KIMHON1" target="_blank" rel="noopener">github.com/KIMHON1</a>
+                </div>
+                <div class="contact-detail">
+                    <i class="fab fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/kimenyi-honore/" target="_blank" rel="noopener">linkedin.com/in/kimenyi-honore</a>
+                </div>
+            </div>
+            <div class="contact-form-box">
+                <input type="text"  class="field" placeholder="Your Name"     name="name"    id="name"    onkeyup="validateName()">
+                <span class="err1" id="name-error"></span>
+                <input type="email" class="field" placeholder="Your Email"    name="email"   id="email"   onkeyup="validateEmail()">
+                <span class="err2" id="email-error"></span>
+                <textarea           class="field area" placeholder="Your message..." name="message" id="message" cols="30" rows="6" onkeyup="validateMessage()"></textarea>
+                <span class="err3" id="message-error"></span>
+                <div class="btn" onclick="return validateForm()">Send Message</div>
+                <span class="err4" id="submit-error"></span>
+            </div>
+        </div>
+    </section>
 
-              </div> 
-
-                
-          
-     
-           
-     
-      
-    </div> 
-     <!-- footer -->
-      <footer class="section footer"> 
-        <!-- footer links -->
+    <!-- Footer -->
+    <footer class="footer">
         <ul class="footer-links">
-          <!-- single link -->
-          <li>
-            <a href="#home" class="footer-link scroll-link">home</a>
-          </li>
-          <!-- end of single link -->
-          <!-- single link -->
-           <li>
-            <a href="#about" class="footer-link scroll-link">about</a>
-          </li> 
-          <!-- end of single link -->
-          <!-- single link -->
-          <li>
-            <a href="#service" class="footer-link scroll-link">services</a>
-          </li>
-          <!-- end of single link -->
-          <!-- single link -->
-          <li>
-            <a href="#contact" class="footer-link scroll-link">contact</a>
-          </li>
-          <!-- end of single link -->
-      
-        </ul> -->
-        <!-- end of footer links -->
-        <!-- footer icons -->
-        <ul class="footer-icons">
-          <!-- single icon -->
-          <li>
-            <a href="https://www.twitter.com" target="_blank" class="footer-icon">
-              <i class="fab fa-facebook"></i>
-            </a>
-          </li>
-          <!-- end of single icon -->
-          <!-- single icon -->
-          <li>
-            <a href="https://www.twitter.com" target="_blank" class="footer-icon">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </li>
-          <!-- end of single icon -->
-          <!-- single icon -->
-          <li>
-            <a href="https://www.twitter.com" target="_blank" class="footer-icon">
-              <i class="fab fa-squarespace"></i>
-            </a>
-          </li>
-          <!-- end of single icon -->
-
-          <!-- single icon -->
-          <li>
-            <a href="https://www.reddit.com" target="_blank" class="footer-icon">
-              <i class="fa-brands fa-square-reddit"></i>
-            </a>
-          </li>
-          <!-- end of single icon -->
-
-          <!-- single icon -->
-          <li>
-            <a href="https://www.linkedin.com" target="_blank" class="footer-icon">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-          </li>
-          <!-- end of single icon -->
-
-            <!-- single icon -->
-            <li>
-              <a href="https://www.github.com" target="_blank" class="footer-icon">
-                <i class="fa-brands fa-github"></i>
-              </a>
-            </li> 
-            <!-- end of single icon -->
+            <li><a href="#home"       class="footer-link scroll-link">Home</a></li>
+            <li><a href="#about"      class="footer-link scroll-link">About</a></li>
+            <li><a href="#skills"     class="footer-link scroll-link">Skills</a></li>
+            <li><a href="#projects"   class="footer-link scroll-link">Projects</a></li>
+            <li><a href="#experience" class="footer-link scroll-link">Experience</a></li>
+            <li><a href="#contact"    class="footer-link scroll-link">Contact</a></li>
         </ul>
-        <!-- end of footer icons -->
-      <p class="copyright">
-          copyright &copy; <span id="date"></span>.
-          all rights reserved
+        <ul class="footer-icons">
+            <li>
+                <a href="https://github.com/KIMHON1" target="_blank" rel="noopener" class="footer-icon" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/kimenyi-honore/" target="_blank" rel="noopener" class="footer-icon" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+            <li>
+                <a href="mailto:honore.kimenyi@gmail.com" class="footer-icon" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </li>
+        </ul>
+        <p class="copyright">
+            Copyright &copy; <span id="date"></span> Kimenyi Honore. All rights reserved.
         </p>
-      </footer>
-<!-- where body ends-->
+    </footer>
 
-<!-- java script -->
+</div>
+
 <script src="./app.js"></script>
-<!-- end of java script -->
 </body>
 </html>
